@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: smart-gym-backend
+    env: node
+    buildCommand: cd algorithm && gcc scheduler.c -o scheduler && cd ../backend && npm install
+    startCommand: cd backend && node server.js
